@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeae9; /* Latar belakang */
+    color: #322d2c; /* Warna teks utama */
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    gap: 20px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #946464;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    height: 50px; 
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #eaeae9; /* Warna tulisan di navbar */
+    font-weight: bold;
+}
+
+.navbar .cta {
+    background-color: #322d2c;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #eaeae9;
+}
+
+/* buat Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ded8c7;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    color: #946464;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    color: #333333;
+}
+
+.kupon img {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 15px; 
+    border-radius: 5px; 
+}
+
+/* isian Content */
+.content {
+    grid-area: content;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #946464;
+}
+
+
+/* Tentang Toko */
+.about {
+    margin-top: 40px;
+    margin-top: 40px;
+    background-color: #faf3e0; /* Background yang lebih terang */
+    padding: 20px;
+    border-radius: 10px; /* Membuat sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambah bayangan untuk efek kedalaman */
+    max-width: 800px;
+    margin: 0 auto; /* Pusatkan konten */
+    line-height: 1.8;
+}
+
+.about h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #946464;
+    text-align: center;  ;
+}
+
+.about p {
+    color: #333333;
+    font-size: 1.1em;
+    text-align: justify; 
+    margin-bottom: 20px;
+}
+
+.pricelist {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pricelist h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #946464;
+}
+
+.pricelist img {
+    width: 80%; 
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-now {
+    background-color: #faf3e0; 
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.order-now h2 {
+    color: #946464; /* Title color */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.order-now p {
+    color: #322d2c; /* Text color */
+    margin-bottom: 30px;
+}
+
+.whatsapp-button {
+    background-color: #322d2c; /* Button background */
+    color: #eaeae9; /* Button text */
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.whatsapp-button:hover {
+    background-color: #96827b; 
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    background-color: #322d2c;
+    color: #eaeae9;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #ded8c7;
+}
+
+.footer-column p, 
+.footer-column a {
+    margin-bottom: 10px;
+    color: #ded8c7;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #946464;
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #eaeae9;
+    padding-top: 15px;
+    color: #ded8c7;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
